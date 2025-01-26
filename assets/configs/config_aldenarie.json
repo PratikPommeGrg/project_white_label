@@ -1,0 +1,17 @@
+{
+    "appName": "Aldenarie",
+    "appColors": {
+    "primaryColor": "#FF5733",
+    "secondaryColor": "#33FF57",
+    "neutralColor": "#5733FF"
+   },
+    "logo": "assets/assets_aldenarie/aldenarie_logo.png",
+    "features": {
+      "enableChat": true,
+      "enablePayments": true,
+      "enableNotifications": false
+    },
+    "apiEndpoint": "https://api.aldehare.com",
+    "welcomeMessage": "Welcome to Aldehare!",
+    "font": "Roboto"
+  }

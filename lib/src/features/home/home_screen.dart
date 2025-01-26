@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_white_label/main.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,21 +8,35 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("App Name"),
+        backgroundColor: appConfig.appColors?.primaryColor ?? Colors.white,
+        title: Text(
+          appConfig.appName ?? '',
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+          ),
+        ),
       ),
       body: Center(
           child: Column(
         spacing: 16,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Welcome"),
+          Text(appConfig.appWelcomeMessage ?? ''),
           ElevatedButton(
             onPressed: () {
               showAdaptiveDialog(
                 barrierDismissible: true,
                 context: context,
                 builder: (context) => AlertDialog.adaptive(
-                  content: Text("data"),
+                  content: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("Api url: ${appConfig.appApiUrl}"),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               );
             },

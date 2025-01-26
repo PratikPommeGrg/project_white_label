@@ -1,0 +1,17 @@
+{
+    "appName": "Borcelle",
+   "appColors": {
+    "primaryColor": "#3366FF",
+    "secondaryColor": "#FF33A1",
+    "neutralColor": "#FF5733"
+   },
+    "logo": "assets/assets_borcelle/borcelle_logo.png",
+    "features": {
+      "enableChat": false,
+      "enablePayments": true,
+      "enableNotifications": true
+    },
+    "apiEndpoint": "https://api.borcelle.com",
+    "welcomeMessage": "Welcome to Borcelle!",
+    "font": "Montserrat"
+  }

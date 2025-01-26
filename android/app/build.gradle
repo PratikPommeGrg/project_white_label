@@ -24,10 +24,31 @@ android {
         applicationId = "com.example.project_white_label"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 21
+        targetSdk = 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+    }
+
+//flavors for each application
+    flavorDimensions "default"
+
+    productFlavors {
+        borcelle {
+            dimension "default"
+            applicationId = "com.pratik.borcelle"
+            manifestPlaceholders += [appName: "Borcelle Coffee"]
+        }
+         aldenarie {
+            dimension "default"
+            applicationId = "com.pratik.aldenarie"
+            manifestPlaceholders += [appName: "Aldenarie Coffee"]
+        }
+        coffee_time {
+            dimension "default"
+            applicationId = "com.pratik.coffee_time"
+            manifestPlaceholders += [appName: "Coffee Time"]
+        }
     }
 
     buildTypes {

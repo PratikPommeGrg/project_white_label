@@ -1,0 +1,17 @@
+{
+    "appName": "Coffee Time",
+    "appColors": {
+        "primaryColor": "#8B4513",
+        "secondaryColor": "#FFD700",
+        "neutralColor": "#FF5733"
+       },
+    "logo": "assets/assets_coffee_time/coffee_time_logo.png",
+    "features": {
+      "enableChat": true,
+      "enablePayments": false,
+      "enableNotifications": true
+    },
+    "apiEndpoint": "https://api.coffeetime.com",
+    "welcomeMessage": "Welcome to Coffee Time!",
+    "font": "Lato"
+  }
